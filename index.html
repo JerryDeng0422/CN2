@@ -18,23 +18,49 @@
     
     </head>
     <body>
-        <h1 class="mdui-text-center mdui-typo">AKA.Cyanogen</h1>
-        <div class="mdui-card">
-            <div class="mdui-card-media">
-                <img src="thekingkong/thekingkong.png" class="mdui-center" width="500" height="500">
-                <div class="mdui-card-media-covered">
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">Title</div>
-                        <div class="mdui-card-primary-subtitle">Subtitle</div>
-                    </div>
-                </div>
-            </div>
-            <div class="mdui-card-actions">
-                <button class="mdui-btn mdui-ripple">action 1</button>
-                <button class="mdui-btn mdui-ripple">action 2</button>
-            </div>
+        <div class="mdui-toolbar">
+            <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+            <h1 class="mdui-text-center mdui-typo">AKA.Cyanogen</h1>
+            <div class="mdui-toolbar-spacer"></div>
         </div>
-        
+        <div class="mdui-divider-inset"></div>
+        <div class="mdui-drawer mdui-color-black mdui-drawer-close" id="left-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <div class="mdui-divider-light"></div>
+                <a class="mdui-list-item mdui-ripple" href="https://jerrydeng0422.github.io/cn2/">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+                <div class="mdui-divider-light"></div>
+                <li class="mdui-collapse-item">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+                        <div class="mdui-list-item-content">Cyanogen音乐作品</div>
+                    </div>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+                        <a class="mdui-list-item mdui-ripple">团队概况</a>
+                    </div>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+                        <a class="mdui-list-item mdui-ripple">联系我们</a>
+                    </div>
+                </li>
+                <div class="mdui-divider-light"></div>
+                <li class="mdui-collapse-item">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">album</i>
+                        <div class="mdui-list-item-content">LuckyGuysLabel</div>
+                    </div>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+                        <a class="mdui-list-item mdui-ripple">团队概况</a>
+                    </div>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+                        <a class="mdui-list-item mdui-ripple">联系我们</a>
+                    </div>
+                </li>
+                <div class="mdui-divider-light"></div>
+            </ul>
+        </div>
+        <img src="thekingkong/thekingkong.png" class="mdui-center" width="500" height="500">
         <h1 class="mdui-text-center mdui-typo">The KingKong,out now!</h1>
         <button class="mdui-btn mdui-center mdui-color-cyan-600 mdui-ripple">See More</button>
         <!-- MDUI JavaScript -->
