@@ -33,7 +33,7 @@
         </div>
         <div class="mdui-drawer mdui-color-black mdui-drawer-close" id="left-drawer">
             <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="https://jerrydeng0422.github.io/CN2/">
+                <a class="mdui-list-item mdui-ripple" href="https://jerrydeng0422.github.io/CN2/">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo-accent">home</i>
                     <div class="mdui-list-item-content font">主页 Home</div>
                 </a>
@@ -49,13 +49,13 @@
                     </div>
                 </li>
                 <div class="mdui-divider-light"></div>
-                <li class="mdui-collapse-item">
+                <li class="mdui-collapse-item mdui-collapse-item-open">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">album</i>
                         <div class="mdui-list-item-content font">LuckyGuys</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
-                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense mdui-list-item-active"> 
                         <a class="mdui-list-item mdui-ripple font" href="https://jerrydeng0422.github.io/CN2/notices">公告栏 Notices</a>
                     </div>
                 </li>
@@ -63,8 +63,43 @@
             </ul>
         </div>
         <br>
-        <p class="font mdui-text-center mdui-text-color-indigo" style="font-size: 100px;">AKA.Cyanogen</p>
-        <p class="font mdui-text-center mdui-text-color-indigo" style="font-size: 50px;">Blow your mind.</p>
+        <h1 class="font mdui-text-center">公告栏<small> Notices</small></h1>
+        <br>
+        <div><!--post-->
+        <div class="mdui-divider"></div>
+        <div class="mdui-card mdui-shadow-0">
+            <!-- 卡片头部，包含头像、标题、副标题 -->
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="favicon.ico"/>
+                <div class="mdui-card-header-title font">Cyanogen</div>
+                <div class="mdui-card-header-subtitle font">2022.07.20</div>
+                <div class="mdui-card-menu">
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon mdui-color-gray">
+                        <i class="mdui-icon material-icons">publish</i>
+                    </span>
+                    <span class="mdui-chip-title font">置顶 StickyThread</span>
+                </div>
+              </div>
+            </div>
+            <!-- 卡片的标题和副标题 -->
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title font">TheKingKong正在制作中</div>
+              <div class="mdui-card-primary-subtitle font">TheKingKong Is Coming Soon</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content font">     
+                第一支单曲TheKingKong正在紧锣密鼓准备中，敬请期待！<br>
+                The first single album TheKingKong is being made in full swing,stay informed with us!     
+            </div>
+            <div class="mdui-card-actions">
+                <a class="mdui-btn mdui-center mdui-color-cyan-600 mdui-ripple mdui-ripple-red font" href="https://jerrydeng0422.github.io/CN2/thekingkong/">查看更多 SeeMore</a>
+            </div>
+        </div>
+        <br>
+        <div class="mdui-divider"></div>
+        </div>
+        
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
