@@ -56,7 +56,7 @@
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
                     <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-                        <a class="mdui-list-item mdui-ripple" href="https://brstudio.netlify.app/notices">公告栏</a>
+                        <a class="mdui-list-item mdui-ripple" href="https://brstudio.netlify.app/notices">讨论区</a>
                     </div>
                     <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
                         <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="https://brstudio.netlify.app/members">成员</a>
@@ -65,6 +65,7 @@
                 <div class="mdui-divider-light"></div>
             </ul>
         </div>
+        
         <br>
         <h1 class="mdui-text-center">成员</h1>
         </div>
@@ -91,13 +92,20 @@
                         <i class="mdui-icon mdui-icon-left material-icons">person_pin</i>
                         个人页面
                     </a>
-                    <a class="mdui-btn mdui-ripple" href="mailto:cyanogen0422@qq.com">
-                        <i class="mdui-icon mdui-icon-left material-icons">mail</i>
-                        Email
+                    <a class="mdui-btn mdui-ripple" mdui-menu="{target: '#cyanogenlinks',position: 'top' }">
+                        <i class="mdui-icon mdui-icon-left material-icons">link</i>
+                        链接
                     </a>
+                    <ul class="mdui-menu" id="cyanogenlinks">
+                        <li class="mdui-menu-item">
+                            <a class="mdui-ripple" href="https://brstudio.netlify.app/members/cyanogen">
+                                <i class="mdui-menu-item-icon mdui-icon material-icons">mail_outline</i>电子邮件
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                </div>
-          </div>
+            </div>
+        </div>
       
         
         <!-- MDUI JavaScript -->
