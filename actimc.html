@@ -28,6 +28,9 @@
             0%{opacity: 0;}
             100%{opacity: 1;}
         }
+        .trans{
+            opacity: 0;
+        }
     </style>
     
     </head>
@@ -73,7 +76,7 @@
                 <div class="mdui-divider-light"></div>
             </ul>
         </div>
-        <h1 class="mdui-text-center fadenum" id="title" >被困在我电脑里的猫<br>A Cat Trapped In My Computer</h1>
+        <h1 class="mdui-text-center trans" id="title" >被困在我电脑里的猫<br>A Cat Trapped In My Computer</h1>
         
         <br>
         <div class="mdui-divider-light"></div>
@@ -81,15 +84,10 @@
         <p class="mdui-text-center">Hosted by Netlify</p>
         <p class="mdui-text-center">UserInterface by MDUI</p>
         <!-- MDUI JavaScript -->
-        <script>
-        var title = document.getElementById('title');
-        title.onloadstart = function(){
-            document.querySelector('.fadenum').style.animationPlayState = 'paused';
-        };
-        
+        <script> 
         window.onload = function(){
-            document.querySelector('.fadenum').style.animationPlayState = 'running';
-        };
+            document.getElementById("title").className="mdui-text-center fadenum";
+        }
     </script>
     </body>
 </html>
