@@ -21,6 +21,13 @@
         body{
             font-family: harmonyossans;
         }
+        .fadenum{
+            animation:fadenum 7s 1;
+        }
+        @keyframes fadenum{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
     </style>
     </head>
     <body class="mdui-appbar-with-toolbar mdui-color-grey-900">
@@ -65,8 +72,8 @@
                 <div class="mdui-divider-light"></div>
             </ul>
         </div>
-        <h1 class="mdui-text-center">被困在我电脑里的猫</h1>
-        <h5 class="mdui-text-center">A Cat Trapped In My Computer</h5>
+        <h1 class="mdui-text-center fadenum" id="title">被困在我电脑里的猫</h1>
+        <h5 class="mdui-text-center fadenum" id="title_en">A Cat Trapped In My Computer</h5>
         <br>
         <div class="mdui-divider-light"></div>
         <p class="mdui-text-center">Made by Cyanogen-2022</p>
@@ -76,8 +83,12 @@
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-        crossorigin="anonymous"
-        ></script>
+        crossorigin="anonymous">
+            window.onload()=windowonload;
+            function windowonload(){
+                alert("EIO");
+            }
+        </script>
     </body>
 </html>
 <!--mdui模板>
