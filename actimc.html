@@ -82,7 +82,8 @@
         <p class="mdui-text-center">UserInterface by MDUI</p>
         <!-- MDUI JavaScript -->
         <script>
-        document.querySelector('.fadenum').onloadstart = function(){
+        var title = document.getElementById('title');
+        title.onloadstart = function(){
             document.querySelector('.fadenum').style.animationPlayState = 'paused';
         };
         
