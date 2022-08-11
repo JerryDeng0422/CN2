@@ -33,23 +33,23 @@
         </div>
         <div class="mdui-drawer mdui-color-grey-900 mdui-drawer-close" id="left-drawer">
             <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/">
+                <a class="mdui-list-item mdui-ripple" href="https://cn2.netlify.app/">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo-accent">home</i>
                     <div class="mdui-list-item-content ">主页</div>
                 </a>
                 <div class="mdui-divider-light"></div>
-                <li class="mdui-collapse-item">
+                <li class="mdui-collapse-item mdui-collapse-item-open">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">recent_actors</i>
                         <div class="mdui-list-item-content ">AKA.Cyanogen</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
-                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/about">关于我们</a>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense  mdui-list-item-active"> 
+                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/notices">关于我们</a>
                     </div>
                 </li>
                 <div class="mdui-divider-light"></div>
-                <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="https://cn2.netlify.app/notices">
+                <a class="mdui-list-item mdui-ripple" href="https://cn2.netlify.app/notices">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green-800">filter_frames</i>
                     <div class="mdui-list-item-content ">小黑板</div>
                 </a>
@@ -57,47 +57,21 @@
             </ul>
         </div>
         <br>
-        <h1 class=" mdui-text-center">小黑板</h1>
         <br>
-        <div><!--post-->
-            <div class="mdui-divider"></div>
-            <div class="mdui-card mdui-shadow-0 mdui-color-grey-800">
-                <!-- 卡片头部，包含头像、标题、副标题 -->
-                <div class="mdui-card-header">
-                    <img class="mdui-card-header-avatar" src="CyanogenNew256.png"/>
-                    <div class="mdui-card-header-title ">AKA.Cyanogen<i class="mdui-icon material-icons">check_circle</i></div>
-                    <div class="mdui-card-header-subtitle ">2022.08.11</div>
-                    <div class="mdui-card-menu">
-                    <div class="mdui-chip mdui-color-white">
-                        <span class="mdui-chip-icon mdui-color-white">
-                            <i class="mdui-icon material-icons mdui-text-color-black">publish</i>
-                        </span>
-                        <span class="mdui-chip-title mdui-text-color-black">置顶</span>
-                    </div>
-                </div>
-                </div>
-                <!-- 卡片的标题和副标题 -->
-                <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title ">HELLO.</div>
-                <div class="mdui-card-primary-subtitle ">I AM RIGHT HERE.</div>
-                </div>
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content ">     
-                    Blow your mind.
-                </div>
-                <div class="mdui-card-actions">
-                    <a class="mdui-btn mdui-center mdui-color-grey-900 mdui-ripple" href="https://cn2.netlify.app/about">About Us</a>
-                </div>
-            </div>
-            <br>
-            <div class="mdui-divider"></div>
-        </div>
-        <br>
+        <img src="/CIP.jpeg" class="mdui-center" height="300" width="300">
         <div class="mdui-divider-light"></div>
         <p class="mdui-text-center">Made by Cyanogen-2022</p>
         <p class="mdui-text-center">Hosted by Netlify</p>
         <p class="mdui-text-center">UserInterface by MDUI</p>
-        
+        <script>
+            window.onload = function(){
+                mdui.snackbar({
+                    message: '施工中',
+                    position: 'top',
+                    timeout: '2000',
+                });
+            };
+        </script>
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
