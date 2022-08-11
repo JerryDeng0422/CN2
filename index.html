@@ -21,19 +21,9 @@
         body{
             font-family: harmonyossans;
         }
-        .fadenum{
-            animation:fadenum 5s 1;
-        }
-        @keyframes fadenum{
-            0%{opacity: 0;}
-            100%{opacity: 1;}
-        }
-        .trans{
-            opacity: 0;
-        }
     </style>
     </head>
-    <body class="mdui-appbar-with-toolbar mdui-color-grey-500">
+    <body class="mdui-appbar-with-toolbar mdui-color-grey-900">
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-grey-900">
                 <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">menu</i></a>
@@ -55,10 +45,7 @@
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
                     <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/notices">讨论区</a>
-                    </div>
-                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-                        <a class="mdui-list-item mdui-ripple" href="https://cn2.netlify.app/members">成员</a>
+                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/notices">小黑板</a>
                     </div>
                 </li>
                 <div class="mdui-divider-light"></div>
@@ -71,8 +58,11 @@
         <p class="mdui-text-center">Hosted by Netlify</p>
         <p class="mdui-text-center">UserInterface by MDUI</p>
         <!-- MDUI JavaScript -->
-        <script> 
-           
+        <script
+        src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous">
+         
         </script>
     </body>
 </html>
