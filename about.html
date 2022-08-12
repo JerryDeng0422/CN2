@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-cmn-Hans">
-    <title>BlackRoseStudio</title>
+    <title>AKA.Cyanogen</title>
     <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
@@ -41,7 +41,7 @@
                 <li class="mdui-collapse-item mdui-collapse-item-open">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">recent_actors</i>
-                        <div class="mdui-list-item-content ">AKA.Cyanogen</div>
+                        <div class="mdui-list-item-content">AKA.Cyanogen</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
                     <div class="mdui-collapse-item-body mdui-list mdui-list-dense  mdui-list-item-active"> 
@@ -57,41 +57,43 @@
             </ul>
         </div>
         <br>
-            <div class="mdui-card mdui-color-grey-800">
-                <div class="mdui-card-header">
-                    <img class="mdui-card-header-avatar" src="CyanogenNew256.png">
-                    <div class="mdui-card-header-title">Cyanogen</div>
-                    <div class="mdui-card-header-subtitle">氰</div>
-                </div>
-                
-                <div class="mdui-card-content">
-                    I AM WHAT I AM.
-                    <br/>
-                    <br/>
-                    <i class="mdui-icon material-icons">assignment_ind</i>
-                    室长 程序
-                    <br/>
+        <div class="mdui-color-grey-800">
+            <br>
+            <img src="CyanogenNew256.png" class="mdui-img-circle mdui-center" width="128" height="128">
+            <h1 class="mdui-text-center maler">AKA.Cyanogen</h1>
+            <p class="mdui-text-center maler">2009.4.22</p>
+            <br>
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
 
-                </div>
-                <div class="mdui-card-actions mdui-card-actions-stacked">
-                    <a class="mdui-btn mdui-ripple" href="https://brstudio.netlify.app/members/cyanogen">
-                        <i class="mdui-icon mdui-icon-left material-icons">person_pin</i>
-                        个人页面
-                    </a>
-                    <a class="mdui-btn mdui-ripple" mdui-menu="{target: '#cyanogenlinks',position: 'top' }">
-                        <i class="mdui-icon mdui-icon-left material-icons">link</i>
-                        链接
-                    </a>
-                    <ul class="mdui-menu" id="cyanogenlinks">
-                        <li class="mdui-menu-item">
-                            <a class="mdui-ripple" href="mailto:cyanogen0422@qq.com">
-                                <i class="mdui-menu-item-icon mdui-icon material-icons">mail_outline</i>电子邮件
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <a class="mdui-list-item mdui-ripple" href="mailto:cyanogen0422@qq.com">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">mail</i>
+                        <div class="mdui-list-item-content">电子邮件</div>
+                </a>
+              
+              
+                <li class="mdui-collapse-item">
+                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">play_circle_filled</i>
+                    <div class="mdui-list-item-content">视频</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                  </div>
+                  <div class="mdui-collapse-item-body mdui-list">
+                    <a onclick="cs()" class="mdui-list-item mdui-ripple">哔哩哔哩</a>
+                  </div>
+                </li>
+
+                <li class="mdui-collapse-item" >
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple" onclick="cs()">
+                      <i class="mdui-list-item-icon mdui-icon material-icons">music_note</i>
+                      <div class="mdui-list-item-content">音乐</div>
+                      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </li>
+              
+                
+            </ul>
         <br>
+        </div>
         <div class="mdui-divider-light"></div>
         <p class="mdui-text-center">Made by Cyanogen-2022</p>
         <p class="mdui-text-center">Hosted by Netlify</p>
@@ -102,6 +104,16 @@
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
         crossorigin="anonymous">
          
+        </script>
+        <script>
+            cs = function(){
+                mdui.snackbar({
+                    message: '敬请期待',
+                    timeout: 1000,
+                });
+            }
+                
+        
         </script>
     </body>
 </html>
