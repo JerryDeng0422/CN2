@@ -12,3 +12,14 @@
 .bdrd{
     border-radius: 12px;
 }
+.tr{
+    opacity: 0;
+}
+@keyframes ocanima{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.oc{
+    animation-name: ocanima;
+    animation-duration: 4s;
+}
