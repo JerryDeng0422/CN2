@@ -68,11 +68,11 @@
             </ul>
         </div>
         <br>
-        
         <div class="mdui-color-grey-800 bdrd">
             <br>
             <img class="bdrd mdui-center" width="200" height="200" src="https://cn2.netlify.app/WHATTHEHELL.png">
             <h1 class="mdui-text-center maler"><span >WHAT THE </span><span style="color: #ff2e12">HELL</span></h1>
+            <p class="mdui-text-center maler">With GO<span style="color: #ff2e12">4</span>HELL</p>
             <p class="mdui-text-center maler">2022.10.25</p>
             <br>
             
@@ -154,23 +154,25 @@
             </ul>
         <br>
         </div>
-       
-       
-        <script>
-            cs = function(){
-                mdui.snackbar({
-                    message: '敬请期待',
-                    timeout: 1000,
-                });
-            }
-                
+        <br>
         
-        </script>
         <div class="mdui-color-grey-800">
             <p class="mdui-text-center">Made by Cyanogen-2022</p>
             <p class="mdui-text-center">Hosted by Netlify</p>
             <p class="mdui-text-center">UserInterface by MDUI</p>
-        </div>       
+        </div>
+        <!-- MDUI JavaScript -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous">
+        </script>
+        <script>
+            window.onload=function(){
+                document.getElementById('title').className="mdui-text-center maler oc";
+                document.getElementById('subtitle').className="mdui-text-center maler oc";
+            };
+        </script>
     </body>
 </html>
 <!--mdui模板>
