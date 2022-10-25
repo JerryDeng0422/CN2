@@ -33,23 +33,34 @@
         </div>
         <div class="mdui-drawer mdui-color-grey-900 mdui-drawer-close" id="left-drawer">
             <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <a class="mdui-list-item mdui-ripple" href="https://cn2.netlify.app/">
+                <a class="mdui-list-item mdui-ripple mdui-list-item-active bdrd" href="https://cn2.netlify.app/">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo-accent">home</i>
                     <div class="mdui-list-item-content ">主页</div>
                 </a>
                 <div class="mdui-divider-light"></div>
-                <li class="mdui-collapse-item mdui-collapse-item-open">
-                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <li class="mdui-collapse-item bdrd">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple bdrd">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">recent_actors</i>
-                        <div class="mdui-list-item-content">AKA.Cyanogen</div>
+                        <div class="mdui-list-item-content ">AKA.Cyanogen</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
-                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense  mdui-list-item-active"> 
-                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/notices">关于我们</a>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense bdrd"> 
+                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/about">关于我们</a>
                     </div>
                 </li>
                 <div class="mdui-divider-light"></div>
-                <a class="mdui-list-item mdui-ripple" href="https://cn2.netlify.app/notices">
+                <li class="mdui-collapse-item bdrd">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple bdrd">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">album</i>
+                        <div class="mdui-list-item-content ">音乐</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mdui-collapse-item-body mdui-list mdui-list-dense bdrd"> 
+                        <a class="mdui-list-item mdui-ripple " href="https://cn2.netlify.app/about">关于我们</a>
+                    </div>
+                </li>
+                <div class="mdui-divider-light"></div>
+                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/notices">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green-800">filter_frames</i>
                     <div class="mdui-list-item-content ">小黑板</div>
                 </a>
@@ -96,11 +107,11 @@
             </ul>
         <br>
         </div>
-        <div class="mdui-divider-light"></div>
-        <p class="mdui-text-center">Made by Cyanogen-2022</p>
-        <p class="mdui-text-center">Hosted by Netlify</p>
-        <p class="mdui-text-center">UserInterface by MDUI</p>
-        <!-- MDUI JavaScript -->
+        <div class="mdui-color-grey-800">
+            <p class="mdui-text-center">Made by Cyanogen-2022</p>
+            <p class="mdui-text-center">Hosted by Netlify</p>
+            <p class="mdui-text-center">UserInterface by MDUI</p>
+        </div>        <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
