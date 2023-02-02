@@ -26,13 +26,46 @@
     <body class="mdui-appbar-with-toolbar mdui-color-grey-900">
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-grey-900">
-                <a href="https://cn2.netlify.app" mdui-tooltip="{content: '主页 Home'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">home</i></a>
-                <h1 class="mdui-text-center maler">Cyanogen+</h1>
+                <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">menu</i></a>
+                <h1 class="mdui-text-center maler">Cyanogen Music</h1>
                 <div class="mdui-toolbar-spacer"></div>
             </div>
         </div>
-        <p style="font-size:50px;" class="mdui-text-center maler">404 NOT FOUND</p>
-        <br>
+        <div class="mdui-drawer mdui-color-grey-900 mdui-drawer-close" id="left-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <a class="mdui-list-item mdui-ripple mdui-list-item-active bdrd" href="https://cn2.netlify.app/">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo-accent">home</i>
+                    <div class="mdui-list-item-content ">主页</div>
+                </a>
+                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/categories">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange-600">group</i>
+                    <div class="mdui-list-item-content ">艺人</div>
+                </a>
+                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/categories">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red-600">new_releases</i>
+                    <div class="mdui-list-item-content ">新增</div>
+                </a>
+                <div class="mdui-divider-light"></div>
+            </ul>
+        </div>
+        <div class="mdui-container">
+            <br>
+            <div class="mdui-col-xs-4"></div>
+            <div class="mdui-col-xs-4 mdui-color-grey-800 bdrd">
+                <br>
+                <div class="mdui-valign">
+                    <img height="200" width="200" class="bdrd mdui-img-fluid mdui-center" src="contents/404.png">
+                </div>
+                <h1 class="maler mdui-text-center">404 not found</h1>
+                <a href="https://cn2.netlify.app/" class="mdui-center mdui-fab mdui-color-cyan mdui-ripple">
+                    <i class="mdui-icon material-icons">home</i>
+                </a>
+                <br>
+            </div>
+            <div class="mdui-col-xs-4"></div>
+        </div>
+          
+        
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"

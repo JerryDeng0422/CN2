@@ -38,6 +38,10 @@
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange-600">group</i>
                     <div class="mdui-list-item-content ">艺人</div>
                 </a>
+                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/categories">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red-600">new_releases</i>
+                    <div class="mdui-list-item-content ">新增</div>
+                </a>
                 <div class="mdui-divider-light"></div>
             </ul>
         </div>
@@ -45,11 +49,20 @@
         <div class="mdui-container">
             <div class="mdui-row">
                 <div class="mdui-col-xs-12">
-                    <h1>新歌快送</h1>
+                    <h1>新歌速递</h1>
                 </div>
                 <div class="mdui-col-xs-3">
-                    <img class="mdui-img-fluid bdrd" src="contents/thechaos.png">
-                    <h3>The Chaos</h1>
+                    <div class="mdui-card bdrd mdui-color-grey-900" onclick="thechaos()">
+                        <div class="mdui-card-media">
+                          <img src="contents/thechaos.png" onclick="thechaos()"/>
+                          <div class="mdui-card-media-covered mdui-card-media-covered-transparent" onclick="thechaos()">
+                            <div class="mdui-card-primary">
+                              <div class="mdui-card-primary-title">TheChaos</div>
+                              <div class="mdui-card-primary-subtitle">Cyanogen</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -58,6 +71,11 @@
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
         crossorigin="anonymous">
+        </script>
+        <script>
+            function thechaos(){
+                window.location.href='https://cn2.netlify.app/album/thechaos'
+            }
         </script>
     </body>
 </html>
