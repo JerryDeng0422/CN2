@@ -76,7 +76,7 @@
                 return context == null || context == "" || context == "undefined" ? "" : context;
             }
             var redeemcode = GetQueryString('rdcd');
-            var nonum =/\D{20}/;
+            var nonum =/{20}\D/;
             alert(redeemcode.match(nonum));
         </script>
     </body>
