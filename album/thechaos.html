@@ -75,7 +75,13 @@
                 r = null;
                 return context == null || context == "" || context == "undefined" ? "" : context;
             }
-            alert(GetQueryString("rdcd"));
+            if(GetQueryString("rdcd")!=null){
+
+            }
+            else{
+                alert('请先购买再访问此页面！');
+                window.history.go(-1);
+            }
         </script>
     </body>
 </html>
