@@ -23,7 +23,7 @@
         }
     </style>
     </head>
-    <body class="mdui-appbar-with-toolbar mdui-color-grey-900 mdui-theme-layout-dark locked">
+    <body id="body" class="mdui-appbar-with-toolbar mdui-color-grey-900 mdui-theme-layout-dark locked">
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-grey-900">
                 <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">menu</i></a>
@@ -50,9 +50,8 @@
         </div>
         <br>
         <div class="mdui-container">
-            <div id="locked">
+            <div class="" id="locked">
                 <div class="mdui-col-xs-12">
-                    <br>
                     <br>
                     <br>
                     <br>
@@ -66,9 +65,9 @@
                     <br>
                     <h1 class="mdui-text-center">此内容需要购买!</h1>
                     <br>
-                    <br>
-                    <br>
-                    <br>
+                    <a class="mdui-color-white mdui-center mdui-fab mdui-ripple">
+                        <i class="mdui-icon material-icons mdui-text-color-black">local_mall</i>
+                    </a>
                     <br>
                     <br>
                     <br>
@@ -108,6 +107,14 @@
                     <br>
                 </div>
             </div>
+            <div id="contents" class="mdui-hidden">
+                <div class="mdui-col-xs-3">
+                    <img class="mdui-img-fluid bdrd" src="/contents/thechaos.png">
+                </div>
+                <div class="mdui-col-xs-3"></div>
+                <div class="mdui-col-xs-3"></div>
+                <div class="mdui-col-xs-3"></div>
+            </div>
         </div>
         <!-- MDUI JavaScript -->
         <script
@@ -116,7 +123,33 @@
         crossorigin="anonymous">
         </script>
         <script>
-            
+            function redeem(){
+                var redeemcodebox = document.getElementById('redeemcodebox');
+                var redeemcode = redeemcodebox.value;
+                if (redeemcodebox.checkValidity()) {
+                    var nonum =/[A-Z]+/g;
+                    var onlynum=/[0-9]+/g;
+                    if(Number(redeemcode.match(onlynum)) % 10== 2 && redeemcode.match(nonum)=='CNTC'){
+                        document.getElementById('body').className='mdui-appbar-with-toolbar mdui-color-grey-900 mdui-theme-layout-dark';
+                        document.getElementById('locked').className='mdui-hidden';
+                        document.getElementById('contents').className='';
+                    }
+                    else{
+                        mdui.snackbar({
+                        message: '无效激活码',
+                        position: 'top',
+                        timeout: 1500,
+                    });
+                    }
+                }
+                else{
+                    mdui.snackbar({
+                        message: '无效激活码',
+                        position: 'top',
+                        timeout: 1500,
+                    });
+                }
+            }
         </script>
     </body>
 </html>
