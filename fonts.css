@@ -26,3 +26,6 @@
     animation-name: ocanima;
     animation-duration: 4s;
 }
+.locked{
+    background: linear-gradient(to right bottom, red, white 1500px);
+}
