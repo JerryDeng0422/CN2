@@ -23,7 +23,7 @@
         }
     </style>
     </head>
-    <body class="mdui-appbar-with-toolbar mdui-color-grey-900">
+    <body class="mdui-appbar-with-toolbar mdui-color-grey-900 mdui-theme-layout-dark">
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-grey-900">
                 <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">menu</i></a>
@@ -49,13 +49,62 @@
             </ul>
         </div>
         <br>
-        <div class="mdui-container">
-            <div class="bdrd mdui-row mdui-hoverable mdui-btn-block">
-                <div class="mdui-col-xs-12">
-                    <br>
-                    <h1 class="maler">Cyanogen Music</h1>
-                    <br>
+        <div class="mdui-container" style="background-image: url(/contents/cngbgrd.png);">
+            <div class="mdui-col-xs-12">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="mdui-text-center">此内容需要购买!</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="mdui-col-xs-3"></div>
+            <div class="mdui-col-xs-6 mdui-color-grey-800 bdrd">
+                <h2 class="mdui-text-center">已经拥有此内容？</h2>
+                <br>
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <i class="mdui-icon material-icons">payment</i>
+                    <label class="mdui-textfield-label">激活码</label>
+                    <input id="redeemcodebox" class="mdui-textfield-input" type="text" pattern="^.*(?=.{20,})(?=.*[0-9])(?=.*[A-Z])(?=.*[^a-z]).*$" maxlength="20" required/>
+                    <div class="mdui-textfield-error">激活码应为20位,包含数字与大写字母</div>
+                    <div class="mdui-textfield-helper">请输入电子专辑上印刷的20位激活码以进行验证。</div>
                 </div>
+                <br>
+                <button onclick="redeem()" class="mdui-color-green-600 mdui-center mdui-fab mdui-ripple">
+                    <i class="mdui-icon material-icons mdui-text-color-black">done</i>
+                </button>
+                <br>
+            </div>
+            <div class="mdui-col-xs-12">
+                <br>
+            </div>
+            <div class="mdui-col-xs-3"></div>
+            <div class="mdui-col-xs-6 mdui-color-grey-800 bdrd">
+                <p class="mdui-text-center"><i class="mdui-icon material-icons">announcement</i> 为了保障LuckyMusic的权益,电子商品每次使用都需要验证激活码,且激活码不与个人信息或设备绑定,因此请妥善保管激活码,以便需要时重新激活。</p>
+            </div>
+            <div class="mdui-col-xs-3"></div>
+            <div class="mdui-col-xs-12">
+                <br>
+                <br>
             </div>
         </div>
         <!-- MDUI JavaScript -->
@@ -65,20 +114,6 @@
         crossorigin="anonymous">
         </script>
         <script>
-            function GetQueryString(name) {
-                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-                var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
-                var context = "";
-                if (r != null)
-                    context = decodeURIComponent(r[2]);
-                reg = null;
-                r = null;
-                return context == null || context == "" || context == "undefined" ? "" : context;
-            }
-            if(GetQueryString('rdcd')=='null'||GetQueryString('rdcd')==null||GetQueryString('rdcd')==""||GetQueryString('rdcd')=='undefined' ){
-                alert('您无权访问此页面！');
-                window.history.go(-1);
-            }
             
         </script>
     </body>

@@ -69,11 +69,9 @@
                 <br>
             </div>
             <div class="mdui-col-xs-12 mdui-color-grey-800 bdrd">
-                <p class="mdui-text-center"><i class="mdui-icon material-icons">announcement</i> 为了保障LuckyMusic的权益,电子专辑每次使用都需要验证激活码,且激活码不与个人信息或设备绑定,因此请妥善保管激活码,以便需要时重新激活。</p>
+                <p class="mdui-text-center"><i class="mdui-icon material-icons">announcement</i> 为了保障LuckyMusic的权益,电子商品每次使用都需要验证激活码,且激活码不与个人信息或设备绑定,因此请妥善保管激活码,以便需要时重新激活。电子专辑不能在此页面进行激活,请前往专辑页面。</p>
             </div>
         </div>
-          
-        
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
@@ -86,17 +84,7 @@
                 var redeemcode = redeemcodebox.value;
                 if (redeemcodebox.checkValidity()) {
                     var nonum =/[A-Z]/g;
-                    var onlynum=/[0-9]+/g
-                    if(redeemcode.match(nonum)=='C,N,T,C' && Number(redeemcode.match(onlynum) % 10 ==1)){
-                        window.location.href='https://cn2.netlify.app/album/thechaos?rdcd=' + redeemcode
-                    }
-                    else{
-                    mdui.snackbar({
-                        message: '无效激活码',
-                        position: 'top',
-                        timeout: 1500,
-                    });
-                }
+                    var onlynum=/[0-9]+/g;
                 }
                 else{
                     mdui.snackbar({
