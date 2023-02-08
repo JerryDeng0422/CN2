@@ -75,7 +75,7 @@
                 r = null;
                 return context == null || context == "" || context == "undefined" ? "" : context;
             }
-            if(GetQueryString('rdcd')=='null'){
+            if(GetQueryString('rdcd')=='null'||GetQueryString('rdcd')==null||GetQueryString('rdcd')==""||GetQueryString('rdcd')=='undefined' ){
                 alert('您无权访问此页面！');
                 window.history.go(-1);
             }
