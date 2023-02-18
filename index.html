@@ -23,37 +23,15 @@
     <body class="mdui-appbar-with-toolbar mdui-color-grey-900 hsans mdui-theme-layout-dark">
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-grey-900">
-                <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple "><i class="mdui-icon material-icons">menu</i></a>
                 <h1 class="mdui-text-center maler">Cyanogen Music</h1>
                 <div class="mdui-toolbar-spacer"></div>
             </div>
-        </div>
-        <div class="mdui-drawer mdui-color-grey-900 mdui-drawer-close" id="left-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <a class="mdui-list-item mdui-ripple mdui-list-item-active bdrd" href="https://cn2.netlify.app/">
-                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo-accent">home</i>
-                    <div class="mdui-list-item-content ">主页</div>
-                </a>
-                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/artists">
-                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange-600">group</i>
-                    <div class="mdui-list-item-content ">艺人</div>
-                </a>
-                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/categories">
-                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red-600">new_releases</i>
-                    <div class="mdui-list-item-content ">新增</div>
-                </a>
-                <div class="mdui-divider-light"></div>
-                <a class="mdui-list-item mdui-ripple bdrd" href="https://cn2.netlify.app/redeem">
-                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green-600">card_giftcard</i>
-                    <div class="mdui-list-item-content ">兑换</div>
-                </a>
-            </ul>
         </div>
         <br>
         <div class="mdui-container">
             <div class="mdui-row">
                 <div class="mdui-col-xs-12">
-                    <h1>新歌速递</h1>
+                    <h1>请选择您的专辑</h1>
                 </div>
                 <div class="mdui-col-xs-3">
                     <div class="mdui-card bdrd mdui-color-grey-900" onclick="thechaos()">
@@ -78,7 +56,7 @@
         </script>
         <script>
             function thechaos(){
-                window.location.href='https://cn2.netlify.app/album/thechaos'
+                window.location.href='https://cn2.netlify.app/thechaos'
             }
         </script>
     </body>
