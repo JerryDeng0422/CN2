@@ -1,10 +1,10 @@
 @font-face {
     font-family: harmonyossans;
-    src: url("https://cn2.netlify.app/fonts/harmonyossans.ttf");
+    src: url("/fonts/harmonyossans.ttf");
 }
 @font-face {
     font-family: maler;
-    src: url("https://cn2.netlify.app/fonts/maler.ttf");
+    src: url("/fonts/maler.ttf");
 }
 .maler {
     font-family: maler;
