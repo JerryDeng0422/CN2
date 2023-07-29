@@ -73,10 +73,10 @@
             scroll-snap-type: y mandatory;
         }
         .item{
+            padding: 10vh;
             box-sizing: border-box;
-            padding: 112px;
-            height: 90%;
-            scroll-snap-align: start;
+            height: 100%;
+            scroll-snap-align: center;
             scroll-snap-stop: always;
         }
     </style>
@@ -84,25 +84,23 @@
     <body class=" mdui-color-black mdui-appbar-with-toolbar">
         <div class="container">
             <div class="item" id="top">
-                <h1 class="mdui-text-center light-text" style="font-size: 7vw">不仅仅是音乐。</h1>
+                <h1 class="mdui-text-center light-text" style="font-size: 20vh;">不仅仅是音乐。</h1>
             </div>
             <div class="item">
-                <h1 class="mdui-text-center light-text" style="font-size: 50px;">欢迎！<br>这里是CyanStudio，<br>音乐给予我们机遇，<br>我们用音乐来传达态度，<br>我们希望找到拥有同样热爱的你。</h1>
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">欢迎！<br>这里是CyanStudio，<br>音乐给予我们机遇，<br>我们用音乐来传达态度，<br>我们希望找到拥有同样热爱的你。</h1>
             </div>
             <div class="item">
-                <h1 class="mdui-text-center light-text" style="font-size: 50px;">我们相信，<br>音乐不仅仅是音乐，<br>更是我们的血脉。</h1>
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">我们相信，<br>音乐不仅仅是音乐，<br>更是我们的血脉。</h1>
             </div>
             <div class="item">
-                <h1 class="mdui-text-center light-text" style="font-size: 50px;">与我们产生共鸣，就从这里开始！<br><br></h1>
-                <button class="mdui-ripple mdui-btn mdui-center fab" mdui-drawer="{target: '#left-drawer'}">
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">与我们产生共鸣，就从这里开始！</h1>
+                <button class="mdui-ripple mdui-btn mdui-center fab" mdui-drawer="{target: '#left-drawer'}" style="margin: 250px;">
                     <i class="mdui-icon material-icons">menu</i> 
                     <br>
                     <span class="mdui-text-center">打开导航栏</span>
                 </button>   
             </div>  
         </div>
-        
-        
         <div class="mdui-appbar mdui-color-black mdui-appbar-fixed">
             <div class="mdui-toolbar ">
                 <a mdui-drawer="{target: '#left-drawer'}" class="fab1 mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons">menu</i></a>
