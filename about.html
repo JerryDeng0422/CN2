@@ -17,6 +17,9 @@
     />
     <link rel="shortcut icon" href="favicon.ico">
     <style>
+        body{
+            overflow:hidden
+        }
         .box {
             transition: all 0.35s;
             height: 70px;
@@ -25,67 +28,85 @@
             margin: 25px;
         }
         .box:hover {
-            background-color: #ffffff;
-            color: #000;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px 15px #ffffff;
-            margin: 50px;
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(21, 21, 21, 0.5), 0 0 15px 15px #000;
             font-size: 18px;
+            margin: 50px;
         }
         .fab {
             height: 70px;
             width: 170px;
-            background-color: #000;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             transition: all 0.35s;
             font-size: 10px;
         }
         .fab:hover {
-            background-color: #ffffff;
-            color: #000;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px 15px #ffffff;
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(21, 21, 21, 0.5), 0 0 15px 15px #000;
             font-size: 18px;
         }
         .fab1 {
             height: 70px;
             width: 170px;
-            background-color: #000;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             transition: all 0.35s;
             font-size: 10px;
         }
         .fab1:hover {
-            background-color: #ffffff;
-            color: #000;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(21, 21, 21, 0.5), 0 0 4px 4px #000;
             font-size: 18px;
         }
         .light-text{
-            text-shadow:0 0 5px #fff,
-                     0 0 40px #fff,
-                     0 0 60px #fff;
+            text-shadow:
+                     0 0 60px #000;
         }
-        .title{
-            margin: 40px;
-            font-size: 30px;
-            color: #fff;
+        .container{
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
         }
-        .bdrd{
-            border-radius: 10px;
-        }
-        .crd{
-            width: calc(100vw / 4 -20px);
-            height: calc(100vw / 4 -20px);
+        .item{
+            padding: 10vh;
+            box-sizing: border-box;
+            height: 100%;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
         }
     </style>
     </head>
-    <body class=" mdui-color-black mdui-appbar-with-toolbar">
-        <h1 class="light-text" style="font-size: 20vh;line-height:calc(100vh - 48px);text-align:center;margin: 0;">不仅仅是音乐。</h1>
-        <div class="mdui-appbar mdui-color-black mdui-appbar-fixed">
+    <body class="mdui-appbar-with-toolbar">
+        <div class="container">
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 20vh;">关于CyanStudio</h1>
+            </div>
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 20vh;">我们是谁？</h1>
+            </div>
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">我们是一群怀抱理想的人。<br>我们是彼此的伙伴，<br>也是彼此的家人。<br>我们拥有同样的理想。</h1>
+            </div>
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 20vh;">我们要做什么？</h1>
+            </div>
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">音乐给予我们机遇，<br>我们用音乐来传达态度，<br>我们希望找到拥有同样热爱的你，<br>更希望将嘻哈文化推向世界。</h1>
+            </div>
+            <div class="item">
+                <h1 class="mdui-text-center light-text" style="font-size: 9vh;">和我们产生共鸣，<br>就从这个网站开始。</h1>
+            </div>
+        </div>
+        <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0">
             <div class="mdui-toolbar ">
                 <a mdui-drawer="{target: '#left-drawer'}" class="fab1 mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons">menu</i></a>
             </div>
         </div>
-        <div class="mdui-drawer mdui-color-black mdui-drawer-close mdui-valign" id="left-drawer">
+        <div class="mdui-drawer mdui-drawer-close mdui-valign" id="left-drawer">
             <div class="mdui-center">
                 <button class="mdui-ripple mdui-btn mdui-center box" onclick="window.location.href='/CN2/index.html'">
                     <i class="mdui-icon material-icons">home</i> 
@@ -110,25 +131,6 @@
             </div>
         </div>
         <br>
-        <h1 class="title">新鲜速递</h1>
-        <div class="mdui-row">
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd"  src="/CN2/contents/bamboo.png">
-                <h3 class="mdui-text-center">破竹(BAMBOO)</h3>
-            </div>
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd" src="/CN2/contents/TheGuard.png">
-                <h3 class="mdui-text-center">THE GUARD</h3>
-            </div>
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd" src="/CN2/contents/TasteMyTear.png">
-                <h3 class="mdui-text-center">TASTE MY TEAR</h3>
-            </div>
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd" src="/CN2/contents/TasteMyTear.png">
-                <h3 class="mdui-text-center">翡翠城(THE EMERALD CITY)</h3>
-            </div>
-        </div>
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
