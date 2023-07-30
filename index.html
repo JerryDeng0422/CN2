@@ -65,14 +65,41 @@
                      0 0 60px #fff;
         }
         .title{
-            margin: 40px;
+            margin-top: 10vh;
+            margin-left: 7vh;
+            margin-bottom: 7vh;
             font-size: 30px;
             color: #fff;
         }
         .bdrd{
             border-radius: 10px;
         }
-        
+        .fab2 {
+            background-color: #000000;
+            color: #ffffff;
+            transition: all 0.35s;
+            font-size: 15px;
+            border-radius: 5px;
+            height: 9vh;
+        }
+        .fab2:hover {
+            
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
+        }
+        .abt {
+            transition: all 0.35s;
+            height: 15vh;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .abt:hover{
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
+        }
     </style>
     </head>
     <body class=" mdui-color-black mdui-appbar-with-toolbar">
@@ -117,15 +144,29 @@
                 <img class="mdui-img-fluid bdrd"  src="/CN2/contents/bamboo.png">
                 <h3 class="mdui-text-center">破竹(BAMBOO)</h3>
             </div>
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd" src="/CN2/contents/TheGuard.png">
-                <h3 class="mdui-text-center">THE GUARD</h3>
-            </div>
-            <div class="mdui-col-xs-3 ">
-                <img class="mdui-img-fluid bdrd" src="/CN2/contents/TasteMyTear.png">
-                <h3 class="mdui-text-center">TASTE MY TEAR</h3>
+        </div>
+        <h1 class="title">最新通知</h1>
+        <div class="mdui-container">
+            <div>
+                <div class="mdui-col-xs-12 fab2" onclick="window.location.href='/CN2/notice'">
+                    <h3 class="mdui-float-left"style="line-height:9vh;margin-left: 20px;margin-top: 0;" >正式建站！</h3>
+                    <h3 class="mdui-float-right"style="line-height:9vh;margin-right: 20px;margin-top: 0;">
+                        2023.7.30   
+                        <i class="mdui-icon material-icons">keyboard_arrow_right</i>
+                    </h3>               
+                </div>
             </div>
         </div>
+        <h1 class="title">关于我们</h1>
+        <div class="mdui-container">
+            <div class="mdui-col-xs-12 abt" onclick="window.location.href='/CN2/about'">
+                <h1 class="mdui-float-left" style="line-height: 15vh;margin-top: 0;margin-left: 20px;">CyanStudio</h1>
+                <h1 class="mdui-float-right" style="line-height: 15vh;margin-top: 0;margin-right: 20px;">我们是谁？我们要做什么？
+                    <i class="mdui-icon material-icons" style="font-size: 7vh;">keyboard_arrow_right</i>
+                </h1>
+            </div>
+        </div>
+        <br>
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
