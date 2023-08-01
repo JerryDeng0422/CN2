@@ -79,6 +79,16 @@
             scroll-snap-align: start;
             scroll-snap-stop: always;
         }
+        .bdlt{
+            background-color: #000;
+            color: #fff;
+            transition: all 0.35s;
+        }
+        .bdlt:hover{
+            text-shadow:0 0 5px #fff,
+                     0 0 40px #fff,
+                     0 0 60px #fff;
+        }
     </style>
     </head>
     <body class=" mdui-color-black mdui-appbar-with-toolbar mdui-bottom-nav-fixed">
@@ -111,7 +121,16 @@
                 </button>
             </div>
         </div>
-        
+        <div class="mdui-container">
+            <div class="mdui-col-xs-3 bdlt" onclick="window.location.href='/CN2/music/bamboo'">
+                <img class="mdui-img-fluid bdrd" src="/CN2/contents/THEEMERALDCITY.png">
+                <h3 class="mdui-text-center">翡翠城(THE EMERALD CITY)</h3>
+            </div>
+            <div class="mdui-col-xs-3 bdlt" onclick="window.location.href='/CN2/music/theemeraldcity'" >
+                <img class="mdui-img-fluid bdrd"  src="/CN2/contents/bamboo.png">
+                <h3 class="mdui-text-center">破竹(BAMBOO)</h3>
+            </div>
+        </div>
         <div class="mdui-bottom-nav">
             <a href="javascript:;" class="mdui-ripple  mdui-bottom-nav-active">
               <i class="mdui-icon material-icons light-text">looks_one</i>

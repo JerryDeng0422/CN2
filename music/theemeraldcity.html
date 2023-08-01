@@ -70,6 +70,11 @@
             margin-bottom: 7vh;
             font-size: 30px;
             color: #fff;
+            text-shadow:
+            0 0 5px #fff,
+            0 0 40px #fff,
+            0 0 60px #fff;
+                   
         }
         .bdrd{
             border-radius: 10px;
@@ -88,6 +93,20 @@
             color: #000;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
         }
+        .fab3 {
+            margin: 5px;
+            background-color: #000000;
+            color: #ffffff;
+            transition: all 0.35s;
+            font-size: 15px;
+            border-radius: 5px;
+            height: 9vh;
+        }
+        .fab3:hover {
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
+        }
         .abt {
             transition: all 0.35s;
             height: 15vh;
@@ -100,20 +119,10 @@
             color: #000;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
         }
-        .bdlt{
-            background-color: #000;
-            color: #fff;
-            transition: all 0.35s;
-        }
-        .bdlt:hover{
-            text-shadow:0 0 5px #fff,
-                     0 0 40px #fff,
-                     0 0 60px #fff;
-        }
     </style>
     </head>
     <body class=" mdui-color-black mdui-appbar-with-toolbar">
-        <h1 class="light-text" style="font-size: 20vh;line-height:calc(100vh - 48px);text-align:center;margin: 0;">不仅仅是音乐。</h1>
+        <h1 class="light-text" style="font-size: 20vh;line-height:calc(100vh - 48px);text-align:center;margin: 0;">破竹 BAMBOO</h1>
         <div class="mdui-appbar mdui-color-black mdui-appbar-fixed">
             <div class="mdui-toolbar ">
                 <a mdui-drawer="{target: '#left-drawer'}" class="fab1 mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons">menu</i></a>
@@ -144,38 +153,33 @@
             </div>
         </div>
         <br>
-        <h1 class="title">新鲜速递</h1>
+        <h1 class="title">专辑简介</h1>
         <div class="mdui-container">
-            <div class="mdui-col-xs-3 bdlt" onclick="window.location.href='/CN2/music/bamboo'">
-                <img class="mdui-img-fluid bdrd " src="/CN2/contents/THEEMERALDCITY.png">
-                <h3 class="mdui-text-center">翡翠城(THE EMERALD CITY)</h3>
+            <div class="mdui-col-xs-6 ">
+                <img class="mdui-img-fluid bdrd"  src="/CN2/contents/THEEMERALDCITY.png">
+                <h1 class="light-text" style="font-size: 20px;">2023.8.1</h1>
             </div>
-            <div class="mdui-col-xs-3 bdlt" onclick="window.location.href='/CN2/music/theemeraldcity'" >
-                <img class="mdui-img-fluid bdrd"  src="/CN2/contents/bamboo.png">
-                <h3 class="mdui-text-center">破竹(BAMBOO)</h3>
-            </div>
-        </div>
-        <h1 class="title">最新通知</h1>
-        <div class="mdui-container">
-            <div>
-                <div class="mdui-col-xs-12 fab2" onclick="window.location.href='/CN2/notice'">
-                    <h3 class="mdui-float-left"style="line-height:9vh;margin-left: 20px;margin-top: 0;" >正式建站！</h3>
-                    <h3 class="mdui-float-right"style="line-height:9vh;margin-right: 20px;margin-top: 0;">
-                        2023.7.30   
-                        <i class="mdui-icon material-icons">keyboard_arrow_right</i>
-                    </h3>               
-                </div>
-            </div>
-        </div>
-        <h1 class="title">关于我们</h1>
-        <div class="mdui-container">
-            <div class="mdui-col-xs-12 abt" onclick="window.location.href='/CN2/about'">
-                <h1 class="mdui-float-left" style="line-height: 15vh;margin-top: 0;margin-left: 20px;">CyanStudio</h1>
-                <h1 class="mdui-float-right" style="line-height: 15vh;margin-top: 0;margin-right: 20px;">我们是谁？我们要做什么？
-                    <i class="mdui-icon material-icons" style="font-size: 7vh;">keyboard_arrow_right</i>
+            <div class="mdui-col-xs-6 ">
+                <h1 class="light-text">
+                    Cyanogen发布首张迷你专辑后续单曲《翡翠城(THE EMERALD CITY)》。以童话《绿野仙踪》为灵感，延续《破竹》的故事，开始了“破竹出道”后的第一段旅程。
                 </h1>
             </div>
         </div>
+        <h1 class="title">曲目列表</h1>
+        <div class="mdui-container">
+            <div>
+                <div class="mdui-col-xs-12 fab3" >
+                    <h3 class="mdui-float-left"style="line-height:9vh;margin-left: 20px;margin-top: 0;" >1</h3>
+                    <h3 class="mdui-float-right"style="line-height:9vh;margin-right: 20px;margin-top: 0;">翡翠城(THE EMERALD CITY)</h3>               
+                </div>
+            </div>
+            <div>
+                <div class="mdui-col-xs-12 fab3" >
+                    <h3 class="mdui-float-left"style="line-height:9vh;margin-left: 20px;margin-top: 0;" >2</h3>
+                    <h3 class="mdui-float-right"style="line-height:9vh;margin-right: 20px;margin-top: 0;">指环(RING)</h3>               
+                </div>
+            </div>
+        </div>       
         <br>
         <!-- MDUI JavaScript -->
         <script
@@ -184,24 +188,6 @@
         crossorigin="anonymous">
         </script>
         <script>
-            window.onload = function(){
-                var $ = mdui.$;
-                var uA = navigator.userAgent.toLowerCase();
-                var ipad = uA.match(/ipad/i) == "ipad";
-                var iphone = uA.match(/iphone os/i) == "iphone os";
-                var midp = uA.match(/midp/i) == "midp";
-                var uc7 = uA.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-                var uc = uA.match(/ucweb/i) == "ucweb";
-                var android = uA.match(/android/i) == "android";
-                var windowsce = uA.match(/windows ce/i) == "windows ce";
-                var windowsmd = uA.match(/windows mobile/i) == "windows mobile"; 
-                if (ipad || iphone || midp || uc7 || uc || android || windowsce || windowsmd) {
-                    mdui.snackbar({
-                        message: '移动端请横屏浏览以获得最佳效果。',
-                        buttonText: '好的',
-                        });
-                }
-            }
         </script>
     </body>
 </html>
