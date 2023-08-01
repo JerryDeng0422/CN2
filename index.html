@@ -170,7 +170,7 @@
         <div class="mdui-dialog" id="wap">
             <div class="mdui-dialog-content">移动端请横屏浏览以获得最佳效果。</div>
             <div class="mdui-dialog-actions">
-              <button class="mdui-btn mdui-ripple">好的</button>
+              <button class="mdui-btn mdui-ripple" mdui-dialog-close>好的</button>
             </div>
           </div>
         <!-- MDUI JavaScript -->
@@ -178,8 +178,9 @@
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
         crossorigin="anonymous">
-            Window.onload = function(){
-                console.log('onload');
+        </script>
+        <script>
+            window.onload = function(){
                 var $ = mdui.$;
                 var wap = new mdui.Dialog('#wap');
                 var uA = navigator.userAgent.toLowerCase();
@@ -195,9 +196,6 @@
                     wap.open();
                 }
             }
-        </script>
-        <script>
-            
         </script>
     </body>
 </html>
