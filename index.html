@@ -7,7 +7,7 @@
     <meta name="renderer" content="webkit"/>
     <meta name="force-rendering" content="webkit"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
     <!-- MDUI CSS -->
     <link
       rel="stylesheet"
@@ -125,7 +125,6 @@
     </style>
     </head>
     <body class=" mdui-color-black mdui-appbar-with-toolbar">
-        <h1 class="light-text hover-hide" style="font-size: 20vh;line-height:calc(100vh - 48px);text-align:center;margin: 0;">不仅仅是音乐。</h1>
         <div class="mdui-appbar mdui-color-black mdui-appbar-fixed">
             <div class="mdui-toolbar ">
                 <a mdui-drawer="{target: '#left-drawer'}" class="fab1 mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons">menu</i></a>
@@ -155,6 +154,7 @@
                 </button>
             </div>
         </div>
+        <div id="lottie"></div>
         <br>
         <h1 class="title">新鲜速递</h1>
         <div class="mdui-container">
@@ -192,6 +192,12 @@
         crossorigin="anonymous">
         </script>
         <script>
+            const lottieAnimationItem = lottie.loadAnimation({
+                container: document.querySelector("#lottie"),
+                path: "/now.json",
+                loop: true,
+                renderer: "svg",
+            });
             window.onload = function(){
                 var $ = mdui.$;
                 var uA = navigator.userAgent.toLowerCase();
