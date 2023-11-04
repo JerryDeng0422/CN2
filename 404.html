@@ -9,16 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <!-- MDUI CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2.0.1/mdui.css">
+    <script src="https://unpkg.com/mdui@2.0.1/mdui.global.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
     <style>
         body{
-            overflow:hidden
+            overflow:hidden;
+        
         }
         .box {
             transition: all 0.35s;
@@ -43,27 +40,9 @@
         }
     </style>
     </head>
-    <body class=" mdui-color-black mdui-appbar-with-toolbar">
-        <div>
-            <h1 class="light-text mdui-text-center">404 NOT FOUND</h1>
-        </div>
-        <div class="mdui-center" style="margin: 20vh;">
-            <button class="mdui-ripple mdui-btn mdui-center box" onclick="window.location.href='/index'">
-                <i class="mdui-icon material-icons">home</i> 
-                <br>
-                <span class="mdui-text-center">主页</span>
-            </button>
-            <button class="mdui-ripple mdui-btn mdui-center box" onclick="window.location.href='/music'">
-                <i class="mdui-icon material-icons">music_note</i> 
-                <br>
-                <span class="mdui-text-center">音乐</span>
-            </button>
-            <button class="mdui-ripple mdui-btn mdui-center box" onclick="window.location.href='/notice'">
-                <i class="mdui-icon material-icons">notifications</i> 
-                <br>
-                <span class="mdui-text-center">通知</span>
-            </button>
-        </div>
+    <body class=" mdui-color-black">
+        <h1 class="light-text mdui-text-center">404 NOT FOUND</h1>
+        <h1 class="light-text mdui-text-center">未找到页面</h1>
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
@@ -71,8 +50,6 @@
         crossorigin="anonymous">
         </script>
         <script>
-            
-        
         </script>
     </body>
 </html>
