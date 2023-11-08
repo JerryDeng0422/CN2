@@ -53,11 +53,6 @@
                 font-size: 18px;
             
             }
-            .go {
-                background-color: #ffffff;
-                color: #000000;
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 4px 4px #ffffff;
-            }
             .light-text{
                 text-shadow:0 0 5px #fff,
                         0 0 40px #fff,
@@ -69,14 +64,29 @@
             body{
                 font-family: h;
             }
-            .card{
+           
+            input{
+                transition: all 0.35s;
+                color: #ffffff;
+                width: 25vw;
+                height: 7vh;
+                border-radius: 7px;
+                border:none;
+                background-color:#000000;
                 box-shadow:0 0 5px #fff,
                         0 0 20px #fff,
                         0 0 40px #fff;
+                margin-top: 35vh;
+                text-align: center;
+            }
+            input:invalid{
+                box-shadow:0 0 5px #ff0000,
+                        0 0 20px #ff0000,
+                        0 0 40px #ff0000;
             }
         </style>
     </head>
-    <body class=" mdui-color-black mdui-appbar-with-toolbar  mdui-theme-accent-cyan">
+    <body class=" mdui-color-black mdui-appbar-with-toolbar  mdui-theme-accent-cyan mdui-valign">
         <div class="mdui-appbar mdui-color-black mdui-appbar-fixed">
             <div class="mdui-toolbar ">
                 <a mdui-drawer="{target: '#left-drawer'}" class="fab1 mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white "><i class="mdui-icon material-icons">menu</i></a>
@@ -89,6 +99,11 @@
                     <br>
                     <span class="mdui-text-center">Home</span>
                 </button>
+                <button class="mdui-ripple mdui-btn mdui-center box" mdui-dialog="{target: '#HelpDialog'}">
+                    <i class="mdui-icon material-icons">help</i> 
+                    <br>
+                    <span class="mdui-text-center">Help</span>
+                </button>
                 <button class="mdui-ripple mdui-btn mdui-center box" onclick="window.location.href='/about'">
                     <i class="mdui-icon material-icons">info</i> 
                     <br>
@@ -96,66 +111,30 @@
                 </button>
             </div>
         </div>
-        <h1 class="light-text hover-hide">Welcome To Cyan-Universe.</h1>
-        <br/>
-        <div class="mdui-container" style="margin-top: 25vh;">
-            <div class="mdui-col-sm-6 mdui-col-md-4 mdui-col-md-3 mdui-col-xl-3">
-                <div class="mdui-card mdui-color-black card">
-                    <!-- 卡片头部，包含头像、标题、副标题 -->
-                    <div class="mdui-card-header">
-                        <img class="mdui-card-header-avatar" src="/image/avatar.png"/>
-                        <div class="mdui-card-header-title">Cyanogen</div>
-                        <div class="mdui-card-header-subtitle">I'm the BAMBOOBREAKER.</div>
-                    </div>
-                    <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-                    <div class="mdui-card-media">
-                        <img src="/image/bamboo.png"/>
-                    </div>
-                    <!-- 卡片的标题和副标题 -->
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">BAMBOO</div>
-                        <div class="mdui-card-primary-subtitle">2023.10.15
-                            <div class="mdui-typo">
-                                <p><kbd>EP</kbd> <kbd>Debut</kbd></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mdui-col-sm-6 mdui-col-md-4 mdui-col-md-3 mdui-col-xl-3">
-                <div class="mdui-card mdui-color-black card">
-                    <!-- 卡片头部，包含头像、标题、副标题 -->
-                    <div class="mdui-card-header">
-                        <img class="mdui-card-header-avatar" src="/image/avatar.png"/>
-                        <div class="mdui-card-header-title">Cyanogen</div>
-                        <div class="mdui-card-header-subtitle">I'm the BAMBOOBREAKER.</div>
-                    </div>
-                    <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-                    <div class="mdui-card-media">
-                        <img src="/image/bluebloodcover.png"/>
-                    </div>
-                    <!-- 卡片的标题和副标题 -->
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">Blue Blood</div>
-                        <div class="mdui-card-primary-subtitle">2023.11.1
-                            <div class="mdui-typo">
-                                <p><kbd>EP</kbd></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
+        <input id="input" onkeyup="Check()" class="mdui-center" type="text" pattern="[0-9a-zA-Z]{20}" maxlength="20" ></input>
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
         crossorigin="anonymous">
         </script>
         <script>
-            function GoForward(){
-                window.location.href = "/choose"
+            //按回车跳转至下一页
+            function Check() {
+                var input = document.getElementById("input");
+                if (input.checkValidity()&&13==event.keyCode&&input.value!=="") { 
+                    alert("跳转至下一页");
+                }
+                //小写字母自动转为大写
+                input.value = input.value.toUpperCase();
+            
             }
         </script>
+        <div class="mdui-dialog mdui-color-grey-900" id="HelpDialog">
+            <div class="mdui-dialog-title">Help</div>
+            <div class="mdui-dialog-content mdui-text-color-white">Enter your code in the text box to unlock your album.<br/>A valid code should contain uppercase letters and numbers, with a length of 20 characters.<br/>Example: ABCD1234567890000000</div>
+            <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple mdui-text-color-white" mdui-dialog-close>Close</button>
+            </div>
+        </div>
     </body>
 </html>
