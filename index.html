@@ -109,7 +109,7 @@
                 </button>
             </div>
         </div>
-        <input id="input" onkeyup="Check()" class="mdui-center" type="text" pattern="[0-9A-Z]{20}" maxlength="20" ></input>
+        <input id="input" oninput="Check()"  class="mdui-center" type="text" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{20}$" maxlength="20" ></input>
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
@@ -122,9 +122,11 @@
                 if (input.checkValidity()&&13==event.keyCode&&input.value!=="") { 
                     alert("跳转至下一页");
                 }
-                //小写字母自动转为大写
                 input.value = input.value.toUpperCase();
-            
+                //不能输入空格
+                if (input.value.indexOf(" ") >= 0) {
+                    input.value = input.value.replace(/ /g, "");
+                }
             }
         </script>
         <div class="mdui-dialog mdui-color-grey-900" id="HelpDialog">
