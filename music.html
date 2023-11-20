@@ -113,19 +113,14 @@
         crossorigin="anonymous">
         </script>
         <script>
-            var input = document.getElementById("input");
-            function Check(){
-                input.value = input.value.toUpperCase();
-                //不能输入空格
-                if (input.value.indexOf(" ") >= 0) {
-                    input.value = input.value.replace(/ /g, "");
-                }
-            }
-            function Go(){
-                //检查输入是否合法
-                if (input.value!==""&&input.checkValidity()&&event.keyCode == 13) {
-                    localStorage.setItem("code", input.value);
-                    window.location.href = "/music";
+            window.onload = function () {
+                var regex = /\d+/;
+                // 要匹配的字符串
+                var code = localStorage.getItem('code');
+                var numbers = code.match(regex);
+                if ((~~numbers)%5 !== 3) {
+                    localStorage.clear();
+                    window.location.href = "/";
                 }
             }
         </script>
